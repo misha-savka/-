@@ -1,0 +1,211 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #101722;
+    color: white;
+    font-family: monospace;
+    image-rendering: pixelated;
+}
+
+header {
+    background: #202d40;
+    text-align: center;
+    padding: 25px;
+    border-bottom: 5px solid #e9b832;
+}
+
+header h1 {
+    color: #ffcf43;
+    font-size: 36px;
+    text-shadow: 4px 4px #000;
+}
+
+header p {
+    letter-spacing: 5px;
+    color: #aabbd0;
+}
+
+nav {
+    background: #28394e;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 12px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffcf43;
+}
+
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 15px;
+}
+
+h2 {
+    color: #ffcf43;
+    border-bottom: 3px solid #475c77;
+    padding-bottom: 10px;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.stat {
+    background: #26364a;
+    border: 3px solid #536982;
+    padding: 12px;
+    text-align: center;
+}
+
+.stat p {
+    color: #ffcf43;
+    font-size: 20px;
+}
+
+.map {
+    background: #19354a;
+    border: 5px solid #50657b;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.continent {
+    background: #263d50;
+    border: 3px solid #60778b;
+    padding: 12px;
+    text-align: center;
+}
+
+.continent h3 {
+    color: #ffcf43;
+}
+
+.country {
+    display: inline-block;
+    padding: 10px;
+    margin: 4px;
+    background: #42576d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid #71859a;
+    font-weight: bold;
+}
+
+.country:hover {
+    background: #e9b832;
+    color: black;
+}
+
+.ukraine {
+    background: #bd9c21;
+    color: black;
+    border: 3px solid white;
+}
+
+.poland { background: #a94343; }
+.germany { background: #555; }
+.france { background: #355cb2; }
+.italy { background: #278b50; }
+.spain { background: #a76a29; }
+.uk { background: #444b9d; }
+.china { background: #a33b35; }
+.japan { background: #a94d65; }
+.india { background: #a76c31; }
+.turkey { background: #a43d3d; }
+.korea { background: #386b9a; }
+.usa { background: #36548c; }
+.canada { background: #a43d3d; }
+.brazil { background: #278b50; }
+.mexico { background: #33845a; }
+.egypt { background: #a37b30; }
+.africa { background: #39845a; }
+.nigeria { background: #36865d; }
+
+.panel {
+    background: #26364a;
+    border: 3px solid #536982;
+    padding: 20px;
+    line-height: 2;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #dcae32;
+    color: #151515;
+    text-decoration: none;
+    font-weight: bold;
+    border: 3px solid #ffe18b;
+    margin-top: 10px;
+}
+
+.button:hover {
+    background: #ffe18b;
+}
+
+.country-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.country-list article {
+    background: #26364a;
+    border: 3px solid #536982;
+    padding: 15px;
+    text-align: center;
+    scroll-margin-top: 20px;
+}
+
+.owned {
+    color: #5cff8b;
+    font-weight: bold;
+}
+
+footer {
+    background: #202d40;
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+    color: #aabbd0;
+}
+
+@media(max-width: 650px) {
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .map {
+        grid-template-columns: 1fr;
+    }
+
+    .country-list {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 7px;
+    }
+}
